@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B18F94C23CD5F910036D7E3 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18F94B23CD5F910036D7E3 /* GFButton.swift */; };
 		5BA587C223CBF06D00128F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA587C123CBF06D00128F6A /* AppDelegate.swift */; };
 		5BA587C423CBF06D00128F6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA587C323CBF06D00128F6A /* SceneDelegate.swift */; };
 		5BA587CB23CBF07200128F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BA587CA23CBF07200128F6A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B18F94B23CD5F910036D7E3 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		5BA587BE23CBF06D00128F6A /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA587C123CBF06D00128F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BA587C323CBF06D00128F6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				5BA587CF23CBF07200128F6A /* Info.plist */,
 				5BA587D723CC22CA00128F6A /* FavoritesListVC.swift */,
 				5BA587D523CC229900128F6A /* SearchVC.swift */,
+				5B18F94B23CD5F910036D7E3 /* GFButton.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BA587C223CBF06D00128F6A /* AppDelegate.swift in Sources */,
+				5B18F94C23CD5F910036D7E3 /* GFButton.swift in Sources */,
 				5BA587D623CC229900128F6A /* SearchVC.swift in Sources */,
 				5BA587C423CBF06D00128F6A /* SceneDelegate.swift in Sources */,
 				5BA587D823CC22CA00128F6A /* FavoritesListVC.swift in Sources */,
