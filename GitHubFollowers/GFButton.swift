@@ -23,7 +23,7 @@ class GFButton: UIButton {
     init(backgroundColor: UIColor, title: String) {
         super.init(frame: .zero) // it will be changed with constraints
         self.backgroundColor = backgroundColor
-        self.titleLabel?.text = title
+        self.setTitle(title, for: .normal)
         configure()
     }
     
