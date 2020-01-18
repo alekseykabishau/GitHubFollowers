@@ -70,22 +70,54 @@
 		5BA587C023CBF06D00128F6A /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				5BB1E4F023D354D500F87C63 /* Extensions */,
+				5BB1E4F123D354E300F87C63 /* Custom Views */,
+				5BB1E4EF23D354C500F87C63 /* Screens */,
+				5BB1E4F223D3550C00F87C63 /* Support */,
+			);
+			path = GitHubFollowers;
+			sourceTree = "<group>";
+		};
+		5BB1E4EF23D354C500F87C63 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5BA587D523CC229900128F6A /* SearchVC.swift */,
+				5BA587D723CC22CA00128F6A /* FavoritesListVC.swift */,
+				5BB800F823D004ED0057EA39 /* FollowerListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5BB1E4F023D354D500F87C63 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5BB8010023D2BD910057EA39 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5BB1E4F123D354E300F87C63 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BB800FE23D28B440057EA39 /* GFAlertVC.swift */,
+				5BB800FA23D287950057EA39 /* GFTitleLabel.swift */,
+				5BB800FC23D2895F0057EA39 /* GFBodyLabel.swift */,
+				5B18F94D23CECA980036D7E3 /* GFTextField.swift */,
+				5B18F94B23CD5F910036D7E3 /* GFButton.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		5BB1E4F223D3550C00F87C63 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				5BA587C123CBF06D00128F6A /* AppDelegate.swift */,
 				5BA587C323CBF06D00128F6A /* SceneDelegate.swift */,
 				5BA587CA23CBF07200128F6A /* Assets.xcassets */,
 				5BA587CC23CBF07200128F6A /* LaunchScreen.storyboard */,
 				5BA587CF23CBF07200128F6A /* Info.plist */,
-				5BA587D723CC22CA00128F6A /* FavoritesListVC.swift */,
-				5BA587D523CC229900128F6A /* SearchVC.swift */,
-				5B18F94B23CD5F910036D7E3 /* GFButton.swift */,
-				5B18F94D23CECA980036D7E3 /* GFTextField.swift */,
-				5BB800F823D004ED0057EA39 /* FollowerListVC.swift */,
-				5BB800FA23D287950057EA39 /* GFTitleLabel.swift */,
-				5BB8010023D2BD910057EA39 /* UIViewController+Ext.swift */,
-				5BB800FE23D28B440057EA39 /* GFAlertVC.swift */,
-				5BB800FC23D2895F0057EA39 /* GFBodyLabel.swift */,
 			);
-			path = GitHubFollowers;
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGW2M4R8BY;
-				INFOPLIST_FILE = GitHubFollowers/Info.plist;
+				INFOPLIST_FILE = GitHubFollowers/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VGW2M4R8BY;
-				INFOPLIST_FILE = GitHubFollowers/Info.plist;
+				INFOPLIST_FILE = GitHubFollowers/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
