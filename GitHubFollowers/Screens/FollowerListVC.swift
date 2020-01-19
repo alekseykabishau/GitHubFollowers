@@ -16,7 +16,7 @@ class FollowerListVC: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
-        navigationController?.isNavigationBarHidden = false // because it is hidden on searchVC
+        navigationController?.setNavigationBarHidden(false, animated: true) // because it is hidden on searchVC
         navigationController?.navigationBar.prefersLargeTitles = true
         print(username!)
     }
