@@ -19,5 +19,16 @@ class FollowerListVC: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: true) // because it is hidden on searchVC
         navigationController?.navigationBar.prefersLargeTitles = true
         print(username!)
+        
+        NetworkManager.shared.getFollowers(for: username, page: 1) { (followers, errorMessage) in
+            
+            guard let followers = followers else {
+                self.presentGFAlertOnMainThread(title: "Bad Stuff Happend", message: errorMessage!, buttonTitle: "OK")
+                return
+            }
+            
+            print("Followers.count = \(followers.count)")
+            print(followers)
+        }
     }
 }
