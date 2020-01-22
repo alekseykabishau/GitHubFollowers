@@ -18,23 +18,19 @@ class FollowerListVC: UIViewController {
         view.backgroundColor = .systemBackground
         navigationController?.setNavigationBarHidden(false, animated: true) // because it is hidden on searchVC
         navigationController?.navigationBar.prefersLargeTitles = true
-        print(username!)
         
-        NetworkManager.shared.getFollowers(for: username, page: 1) { (followers, errorMessage) in
+        
+        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
             
-            guard let followers = followers else {
-                
-                self.presentGFAlertOnMainThread(title: "Bad Stuff Happend", message: errorMessage!.rawValue, buttonTitle: "OK")
-                
+            switch result {
+            case .success(let followers):
+                print(followers)
+            case .failure(let error):
+                self.presentGFAlertOnMainThread(title: "Bad Stuff Happend", message: error.rawValue, buttonTitle: "OK")
                 DispatchQueue.main.async {
                     self.navigationController?.popViewController(animated: true)
                 }
-                
-                return
             }
-            
-            print("Followers.count = \(followers.count)")
-            print(followers)
         }
     }
 }
