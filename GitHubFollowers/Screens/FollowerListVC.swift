@@ -13,16 +13,32 @@ class FollowerListVC: UIViewController {
     var username: String! // will be set when we pass data to it
     var collectionView: UICollectionView!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureViewController()
         configureCollectionView()
-        
+        getFollowers()
+    }
+    
+    
+    func configureViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.setNavigationBarHidden(false, animated: true) // because it is hidden on searchVC
         navigationController?.navigationBar.prefersLargeTitles = true
-        
-        
+    }
+    
+    
+    func configureCollectionView() {
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewLayout())
+        view.addSubview(collectionView)
+        collectionView.backgroundColor = .systemPink
+        collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
+    }
+    
+    
+    func getFollowers() {
         NetworkManager.shared.getFollowers(for: username, page: 1) { result in
             
             switch result {
@@ -35,12 +51,5 @@ class FollowerListVC: UIViewController {
                 }
             }
         }
-    }
-    
-    func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewLayout())
-        view.addSubview(collectionView)
-        collectionView.backgroundColor = .systemPink
-        collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
 }
