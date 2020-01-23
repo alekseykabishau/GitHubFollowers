@@ -11,9 +11,12 @@ import UIKit
 class FollowerListVC: UIViewController {
     
     var username: String! // will be set when we pass data to it
+    var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureCollectionView()
         
         view.backgroundColor = .systemBackground
         navigationController?.setNavigationBarHidden(false, animated: true) // because it is hidden on searchVC
@@ -32,5 +35,12 @@ class FollowerListVC: UIViewController {
                 }
             }
         }
+    }
+    
+    func configureCollectionView() {
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewLayout())
+        view.addSubview(collectionView)
+        collectionView.backgroundColor = .systemPink
+        collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
 }
