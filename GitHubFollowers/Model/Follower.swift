@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Follower: Codable {
+// Hashable - can add hash function and pass just required property
+struct Follower: Codable, Hashable {
     var login: String
     var avatarUrl: String // in json response it's in snake case format
 }
