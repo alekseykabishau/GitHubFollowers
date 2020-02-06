@@ -6,12 +6,13 @@
 //  Copyright © 2020 Aleksey Kabishau. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager {
     
     static let shared = NetworkManager()
-    let baseURL = "https://api.github.com/users/"
+    private let baseURL = "https://api.github.com/users/"
+    let cache = NSCache<NSString, UIImage>()
     
     private init() {} // does it always work this way with singletons?
     
