@@ -116,13 +116,13 @@
 		5BB1E4F123D354E300F87C63 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				5BF5790423EFBB2F00CE7C01 /* ViewControllers */,
+				5BF5790323EFBB2600CE7C01 /* Views */,
+				5BF5790723EFBB7C00CE7C01 /* Labels */,
+				5BF5790623EFBB5200CE7C01 /* ImageViews */,
+				5BF5790523EFBB3D00CE7C01 /* TextFields */,
+				5BF5790223EFBB1900CE7C01 /* Buttons */,
 				5BCC924423D93C6000A89F1D /* Cells */,
-				5BB800FE23D28B440057EA39 /* GFAlertVC.swift */,
-				5BB800FA23D287950057EA39 /* GFTitleLabel.swift */,
-				5BB800FC23D2895F0057EA39 /* GFBodyLabel.swift */,
-				5B18F94D23CECA980036D7E3 /* GFTextField.swift */,
-				5B18F94B23CD5F910036D7E3 /* GFButton.swift */,
-				5BCC924723D93D2400A89F1D /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -171,6 +171,54 @@
 				5BE2A60223D4E56B008511FA /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		5BF5790223EFBB1900CE7C01 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5B18F94B23CD5F910036D7E3 /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		5BF5790323EFBB2600CE7C01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BF5790423EFBB2F00CE7C01 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BB800FE23D28B440057EA39 /* GFAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BF5790523EFBB3D00CE7C01 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				5B18F94D23CECA980036D7E3 /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		5BF5790623EFBB5200CE7C01 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				5BCC924723D93D2400A89F1D /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		5BF5790723EFBB7C00CE7C01 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				5BB800FC23D2895F0057EA39 /* GFBodyLabel.swift */,
+				5BB800FA23D287950057EA39 /* GFTitleLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
