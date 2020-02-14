@@ -26,7 +26,7 @@ class GFSecondaryTitleLabel: UILabel {
     }
     
     func configure() {
-        translatesAutoresizingMaskIntoConstraints = true
+        translatesAutoresizingMaskIntoConstraints = false
         textColor = .secondaryLabel
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.9
