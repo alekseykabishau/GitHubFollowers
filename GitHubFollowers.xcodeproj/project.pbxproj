@@ -11,6 +11,8 @@
 		5B18F94E23CECA980036D7E3 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18F94D23CECA980036D7E3 /* GFTextField.swift */; };
 		5B43BAE623FB970A005A27D2 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43BAE523FB970A005A27D2 /* GFItemInfoView.swift */; };
 		5B43BAE823FCDD79005A27D2 /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43BAE723FCDD79005A27D2 /* GFItemInfoVC.swift */; };
+		5B43BAEA23FCE163005A27D2 /* GFRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43BAE923FCE163005A27D2 /* GFRepoItemVC.swift */; };
+		5B43BAEC23FCE35C005A27D2 /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43BAEB23FCE35C005A27D2 /* GFFollowerItemVC.swift */; };
 		5B59490D23F6502300BE0A8D /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B59490C23F6502300BE0A8D /* GFSecondaryTitleLabel.swift */; };
 		5B59490F23F652B400BE0A8D /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B59490E23F652B400BE0A8D /* GFUserInfoHeaderVC.swift */; };
 		5B59491123F65D2200BE0A8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B59491023F65D2200BE0A8D /* Constants.swift */; };
@@ -41,6 +43,8 @@
 		5B18F94D23CECA980036D7E3 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		5B43BAE523FB970A005A27D2 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 		5B43BAE723FCDD79005A27D2 /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
+		5B43BAE923FCE163005A27D2 /* GFRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemVC.swift; sourceTree = "<group>"; };
+		5B43BAEB23FCE35C005A27D2 /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
 		5B59490C23F6502300BE0A8D /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		5B59490E23F652B400BE0A8D /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		5B59491023F65D2200BE0A8D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -79,6 +83,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B43BAED23FCE3AF005A27D2 /* ItemInfoVCs */ = {
+			isa = PBXGroup;
+			children = (
+				5B43BAE723FCDD79005A27D2 /* GFItemInfoVC.swift */,
+				5B43BAE923FCE163005A27D2 /* GFRepoItemVC.swift */,
+				5B43BAEB23FCE35C005A27D2 /* GFFollowerItemVC.swift */,
+			);
+			path = ItemInfoVCs;
+			sourceTree = "<group>";
+		};
 		5BA587B523CBF06C00128F6A = {
 			isa = PBXGroup;
 			children = (
@@ -211,7 +225,7 @@
 			children = (
 				5BB800FE23D28B440057EA39 /* GFAlertVC.swift */,
 				5B59490E23F652B400BE0A8D /* GFUserInfoHeaderVC.swift */,
-				5B43BAE723FCDD79005A27D2 /* GFItemInfoVC.swift */,
+				5B43BAED23FCE3AF005A27D2 /* ItemInfoVCs */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -323,6 +337,7 @@
 				5B83683923EBC6FA00FE6C95 /* UIHelper.swift in Sources */,
 				5BCC924823D93D2400A89F1D /* GFAvatarImageView.swift in Sources */,
 				5B59490D23F6502300BE0A8D /* GFSecondaryTitleLabel.swift in Sources */,
+				5B43BAEC23FCE35C005A27D2 /* GFFollowerItemVC.swift in Sources */,
 				5B43BAE623FB970A005A27D2 /* GFItemInfoView.swift in Sources */,
 				5BA587D623CC229900128F6A /* SearchVC.swift in Sources */,
 				5BB800FF23D28B440057EA39 /* GFAlertVC.swift in Sources */,
@@ -336,6 +351,7 @@
 				5BB800F923D004ED0057EA39 /* FollowerListVC.swift in Sources */,
 				5BA587C423CBF06D00128F6A /* SceneDelegate.swift in Sources */,
 				5BA587D823CC22CA00128F6A /* FavoritesListVC.swift in Sources */,
+				5B43BAEA23FCE163005A27D2 /* GFRepoItemVC.swift in Sources */,
 				5B7E383B23F24E7B00193B43 /* UserInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
