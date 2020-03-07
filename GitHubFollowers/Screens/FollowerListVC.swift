@@ -44,6 +44,9 @@ class FollowerListVC: UIViewController {
         view.backgroundColor = .systemBackground
         navigationController?.setNavigationBarHidden(false, animated: true) // because it is hidden on searchVC
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem = addButton
     }
     
     
@@ -104,6 +107,11 @@ class FollowerListVC: UIViewController {
         DispatchQueue.main.async {
             self.dataSource.apply(snapshot, animatingDifferences: true, completion: nil)
         }
+    }
+    
+    
+    @objc func addButtonTapped() {
+        print(#function)
     }
     
     
