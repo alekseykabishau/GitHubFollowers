@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B15020D241719DE004B9CC4 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15020C241719DE004B9CC4 /* PersistenceManager.swift */; };
 		5B18F94C23CD5F910036D7E3 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18F94B23CD5F910036D7E3 /* GFButton.swift */; };
 		5B18F94E23CECA980036D7E3 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18F94D23CECA980036D7E3 /* GFTextField.swift */; };
 		5B43BAE623FB970A005A27D2 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43BAE523FB970A005A27D2 /* GFItemInfoView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B15020C241719DE004B9CC4 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		5B18F94B23CD5F910036D7E3 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		5B18F94D23CECA980036D7E3 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		5B43BAE523FB970A005A27D2 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				5BE2A60223D4E56B008511FA /* NetworkManager.swift */,
+				5B15020C241719DE004B9CC4 /* PersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				5BB800FD23D2895F0057EA39 /* GFBodyLabel.swift in Sources */,
 				5BB1E4F523D389A800F87C63 /* Follower.swift in Sources */,
 				5B56A62323FF6A3D00121368 /* Date+Ext.swift in Sources */,
+				5B15020D241719DE004B9CC4 /* PersistenceManager.swift in Sources */,
 				5BB800FB23D287950057EA39 /* GFTitleLabel.swift in Sources */,
 				5BF5790B23EFBEE900CE7C01 /* GFEmptyStateView.swift in Sources */,
 				5BE2A60323D4E56B008511FA /* NetworkManager.swift in Sources */,
