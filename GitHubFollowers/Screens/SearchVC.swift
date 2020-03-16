@@ -36,7 +36,7 @@ class SearchVC: UIViewController {
     }
     
     func createDismissKeyboardTapGesture() {
-        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
         view.addGestureRecognizer(tap)
     }
     
@@ -50,7 +50,9 @@ class SearchVC: UIViewController {
         followerListVC.username = usernameTextField.text
         followerListVC.title = usernameTextField.text
         navigationController?.pushViewController(followerListVC, animated: true)
-        self.view.endEditing(true)
+        
+        //view.endEditing(true) // same effect as line below
+        usernameTextField.resignFirstResponder()
         usernameTextField.text = ""
     }
     
