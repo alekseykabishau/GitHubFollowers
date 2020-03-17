@@ -8,6 +8,7 @@
 
 import UIKit
 
+// can be enum in order to avoid empty initialization
 struct UIHelper {
     
     static func createThreeColumnFlowLayout(view: UIView) -> UICollectionViewFlowLayout {
