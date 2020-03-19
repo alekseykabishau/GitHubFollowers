@@ -13,7 +13,7 @@ class FavoriteCell: UITableViewCell {
     static let reuseID = "FavoriteCell"
     
     let avatarImageView = GFAvatarImageView(frame: .zero)
-    let userNameLable = GFTitleLabel(textAlignment: .left, fontSize: 26)
+    let userNameLabel = GFTitleLabel(textAlignment: .left, fontSize: 26)
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -28,7 +28,7 @@ class FavoriteCell: UITableViewCell {
     
     
     func set(favorite: Follower) {
-        userNameLable.text = favorite.login
+        userNameLabel.text = favorite.login
         
         NetworkManager.shared.downloadImage(from: favorite.avatarUrl) { [weak self] image in
             guard let self = self else { return }
@@ -38,9 +38,7 @@ class FavoriteCell: UITableViewCell {
     
     
     private func configure() {
-        
-        addSubview(avatarImageView)
-        addSubview(userNameLable)
+        addSubviews(views: avatarImageView, userNameLabel)
         
         accessoryType = .disclosureIndicator
         
@@ -52,10 +50,10 @@ class FavoriteCell: UITableViewCell {
             avatarImageView.widthAnchor.constraint(equalToConstant: 60),
             avatarImageView.heightAnchor.constraint(equalToConstant: 60),
             
-            userNameLable.centerYAnchor.constraint(equalTo: avatarImageView.centerYAnchor),
-            userNameLable.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: padding * 2),
-            userNameLable.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
-            userNameLable.heightAnchor.constraint(equalToConstant: 40)
+            userNameLabel.centerYAnchor.constraint(equalTo: avatarImageView.centerYAnchor),
+            userNameLabel.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: padding * 2),
+            userNameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
+            userNameLabel.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
 }

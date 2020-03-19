@@ -62,6 +62,7 @@ class GFItemInfoVC: UIViewController {
     
     
     private func layoutUI() {
+        view.addSubviews(views: stackView, actionButton)
         view.addSubview(stackView)
         view.addSubview(actionButton)
         
