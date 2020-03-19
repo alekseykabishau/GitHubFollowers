@@ -113,7 +113,8 @@ class UserInfoVC: GFDataLoadingVC {
     }
 }
 
-extension UserInfoVC: ItemInfoVCDelegate {
+
+extension UserInfoVC: GFRepoVCDelegate {
     
     func didTapGitHubProfile(for user: User) {
         print(#function)
@@ -121,9 +122,13 @@ extension UserInfoVC: ItemInfoVCDelegate {
             presentGFAlertOnMainThread(title: "Invalid URL", message: "The url attached to this user is invalid.", buttonTitle: "OK")
             return
         }
-        
+
         presentSafariVC(with: url)
     }
+}
+
+
+extension UserInfoVC: GFFollowerVCDelegate {
     
     func didTapGetFollowers(for user: User) {
         print(#function)
