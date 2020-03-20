@@ -257,10 +257,10 @@
 		5BF5790423EFBB2F00CE7C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5B43BAED23FCE3AF005A27D2 /* ItemInfoVCs */,
 				5BB800FE23D28B440057EA39 /* GFAlertVC.swift */,
 				5B59490E23F652B400BE0A8D /* GFUserInfoHeaderVC.swift */,
 				5B2D0FC82420520500CBCECB /* GFDataLoadingVC.swift */,
-				5B43BAED23FCE3AF005A27D2 /* ItemInfoVCs */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

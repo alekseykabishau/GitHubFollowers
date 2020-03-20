@@ -13,6 +13,7 @@ class FavoritesListVC: GFDataLoadingVC {
     let tableView = UITableView()
     var favorites: [Follower] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
@@ -34,7 +35,6 @@ class FavoritesListVC: GFDataLoadingVC {
     
     
     func configureTableView() {
-        
         view.addSubview(tableView)
         tableView.frame = view.bounds
         tableView.rowHeight = 80
@@ -73,7 +73,6 @@ class FavoritesListVC: GFDataLoadingVC {
         }
     }
 }
-
 
 extension FavoritesListVC: UITableViewDataSource, UITableViewDelegate {
     

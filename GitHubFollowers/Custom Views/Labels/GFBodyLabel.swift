@@ -15,14 +15,17 @@ class GFBodyLabel: UILabel {
         configure()
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     convenience init(textAlignment: NSTextAlignment) {
         self.init(frame: .zero) // convenience init calling designated init
         self.textAlignment = textAlignment
     }
+    
     
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
@@ -33,5 +36,4 @@ class GFBodyLabel: UILabel {
         font = UIFont.preferredFont(forTextStyle: .body)
         adjustsFontForContentSizeCategory = true
     }
-
 }

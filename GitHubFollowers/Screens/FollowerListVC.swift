@@ -68,6 +68,7 @@ class FollowerListVC: GFDataLoadingVC {
         collectionView.delegate = self
     }
     
+    
     func getFollowers(username: String, page: Int) {
         
         showLoadingView()
@@ -100,6 +101,7 @@ class FollowerListVC: GFDataLoadingVC {
             self.isLoadingMoreFollowers = false
         }
     }
+    
     
     func configureDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section, Follower>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, follower) -> UICollectionViewCell? in

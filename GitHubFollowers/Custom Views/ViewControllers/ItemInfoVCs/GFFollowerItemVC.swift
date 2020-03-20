@@ -12,10 +12,10 @@ protocol GFFollowerVCDelegate: class {
     func didTapGetFollowers(for user: User)
 }
 
-
 class GFFollowerVC: GFItemInfoVC {
     
     weak var delegate: GFFollowerVCDelegate!
+    
     
     init(user: User, delegate: GFFollowerVCDelegate) {
         super.init(user: user)
@@ -32,6 +32,7 @@ class GFFollowerVC: GFItemInfoVC {
         super.viewDidLoad()
         configureItems()
     }
+    
     
     private func configureItems() {
         itemInfoViewOne.set(itemInfoType: .followers, with: user.followers)

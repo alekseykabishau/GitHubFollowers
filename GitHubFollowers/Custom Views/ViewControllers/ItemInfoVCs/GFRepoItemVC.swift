@@ -12,10 +12,10 @@ protocol GFRepoVCDelegate: class {
     func didTapGitHubProfile(for user: User)
 }
 
-
 class GFRepoVC: GFItemInfoVC {
     
     weak var delegate: GFRepoVCDelegate!
+    
     
     init(user: User, delegate: GFRepoVCDelegate) {
         super.init(user: user)
@@ -32,6 +32,7 @@ class GFRepoVC: GFItemInfoVC {
         super.viewDidLoad()
         configureItems()
     }
+    
     
     private func configureItems() {
         itemInfoViewOne.set(itemInfoType: .repos, with: user.publicRepos)

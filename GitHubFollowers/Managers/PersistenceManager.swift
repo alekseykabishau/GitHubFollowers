@@ -12,6 +12,7 @@ enum PersitenceActionType {
     case add, remove
 }
 
+
 // can use enum to avoid empty struct initialization
 struct PersistenceManager {
     
@@ -52,6 +53,7 @@ struct PersistenceManager {
     
     // because of saving custom object - using codable, simple types - can go with userDefaults
     static func retrieveFavorites(completed: @escaping (Result<[Follower], GFError>) -> Void) {
+        
         guard let favotitesData = defaults.object(forKey: Keys.favorites) as? Data else {
             completed(.success([])) // in this case no data were previously saved
             return

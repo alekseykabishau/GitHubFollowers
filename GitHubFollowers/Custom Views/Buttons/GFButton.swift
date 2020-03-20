@@ -15,16 +15,19 @@ class GFButton: UIButton {
         configure()
     }
     
+    
     // required to handle initialization via storyboard
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     convenience init(backgroundColor: UIColor, title: String) {
         self.init(frame: .zero) // .zero it will be changed with constraints; designated init
         self.backgroundColor = backgroundColor
         self.setTitle(title, for: .normal)
     }
+    
     
     private func configure() {
         layer.cornerRadius = 10

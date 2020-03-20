@@ -26,6 +26,7 @@ class UserInfoVC: GFDataLoadingVC {
     var username: String!
     weak var delegate: UserInfoVCDelegate!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
@@ -110,6 +111,7 @@ class UserInfoVC: GFDataLoadingVC {
             dateLabel.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
+    
     
     func add(childVC: UIViewController, to containerView: UIView) {
         addChild(childVC)
